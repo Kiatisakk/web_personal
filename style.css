@@ -1,0 +1,432 @@
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: Ubuntu, sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #0f0a0f;
+}
+
+h1 {
+    margin: 10px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+h2 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.content h2 {
+    display: block;
+    font-size: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    text-align: center;
+}
+
+.bg-image {
+    background-image: url("/src/image.png");
+    height: 99vh;
+    width: 100vw;
+    background-attachment: fixed;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-areas:
+        "none"
+        "title"
+        "none2";
+}
+
+.fame-center {
+    margin-top: 0;
+    margin-bottom: auto;
+    grid-area: name;
+}
+
+.role-center {
+    grid-area: subtext;
+    margin-top: 0;
+    margin-bottom: auto;
+}
+
+.center-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    border: 5px solid #ddd;
+    margin: 150px auto;
+    margin-bottom: 10px;
+}
+
+.content {
+    height: 90vh;
+}
+
+.methodology-para {
+    background-image: url("/src/image.png");
+    position: relative;
+    min-height: 40vh;
+    background-attachment: fixed;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.methodology {
+    margin: 2rem 20%;
+    text-align: right;
+    padding: 1rem;
+    color: white;
+}
+
+.methodology h2 {
+    margin-right: 2rem;
+    font-size: 3rem;
+}
+
+.methodology p {
+    text-indent: 2rem;
+    width: 40vw;
+    font-size: 1.5rem;
+    text-align: justify;
+    word-wrap: break-word;
+    white-space: pre-line;
+    margin-right: 3rem;
+    margin-left: auto;
+}
+
+.nav-contain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 0.5em 1em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+}
+
+.nav-contain a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.3em 0.6em;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-contain a:hover {
+    background-color: #444444;
+    border-radius: 5px;
+    color: #ffcc00;
+}
+
+.nav-header {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffcc00;
+    background-color: black;
+    padding: 0.4em 0.8em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-right: auto;
+}
+
+.about-me {
+    width: 40vw;
+    padding: 1rem 0;
+    margin: 2rem 20%;
+}
+
+.about-me h2 {
+    font-size: 3rem;
+}
+
+.about-me p {
+    text-indent: 2rem;
+    width: 40vw;
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    text-align: justify;
+    word-wrap: break-word;
+    white-space: pre-line;
+}
+
+.about-me-p {
+    animation-duration: 1000ms;
+    animation-timing-function: ease;
+    animation-delay: 100ms;
+    animation-name: animation-580wcl;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+.edu {
+    width: 60vw;
+    padding: 1rem 0;
+    margin: 2rem auto;
+}
+
+.edu h2 {
+    font-size: 3rem;
+}
+
+.edu p {
+    width: 40vw;
+    margin: 0.2rem 0;
+    padding-left: 1.1rem;
+    font-size: 1.2rem;
+    text-align: justify;
+    word-wrap: break-word;
+    white-space: pre-line;
+}
+
+.edu h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
+.edu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.edu-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 0px;
+    margin-left: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill {
+    margin: 2rem 20%;
+    text-align: right;
+    padding: 1rem;
+    color: white;
+}
+
+.skill h2 {
+    margin-right: 0rem;
+    font-size: 3rem;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-category {
+    text-align: center;
+    display: inline-block;
+    width: 45%;
+    padding: 1rem;
+    background-color: #5a4a5e;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skill-category h3 {
+    font-size: 1.5rem;
+    color: #d0d0d0;
+    margin-bottom: 1.5rem;
+    margin-top: 0rem;
+}
+
+.skill-item {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-item span {
+    font-size: 1rem;
+    color: #c0b0c0;
+}
+
+.contact {
+    width: 70vw;
+    padding: 2rem;
+    margin: 2rem auto;
+    background-color: #1c1b22;
+    border-radius: 10px;
+}
+
+.contact-head {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    color: #c79c9f;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.contact-info {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-item {
+    background-color: #6f6471;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact-item p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.contact-item span {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.contact-item button {
+    background-color: #c79c9f;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.contact-form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #c79c9f;
+    border-radius: 5px;
+    background-color: #2d2b31;
+    color: #fff;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input.ms {
+    padding: 5.3rem 1rem;
+}
+
+.contact-form button {
+    background-color: #c79c9f;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #fff;
+}
+
+hr {
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    unicode-bidi: isolate;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.footer-copyright {
+    color: #d0d6e7;
+    grid-area: copyright;
+    text-align: center;
+    padding: .5rem;
+}
+
+.footer-contain {
+    display: inline-grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 1px 1rem;
+    grid-template-areas: "none copyright social";
+    width: 100%;
+    padding: 1em 0;    
+    background-color: #0f0a0f;
+}
+
+.footer-line {
+    grid-column: 1 / -1;
+    height: 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cursor {
+    display: inline-block;
+    background-color: black;
+    width: 2px;
+    height: 24px;
+    animation: blink 0.7s steps(2, start) infinite;
+}
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}

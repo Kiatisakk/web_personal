@@ -1,0 +1,156 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Kiatisakk</title>
+</head>
+
+<body>
+    <nav class="nav-contain">
+        <a href="/html.html">
+            <div class="nav-header">Kiatisak</div>
+        </a>
+        <a href="#about-me">About Me</a>
+        <a href="#methodology">Methodology</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Experiences</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="bg-image">
+        <div class="content">
+            <div class="center-image">
+                <img src="src/cat.jpg" alt="Center Profile">
+            </div>
+            <h1 class="fame-center">Fame Kiatisak</h1>
+            <h2 class="role-center"><span id="typed"></span><span class="cursor"></span></h2>
+        </div>
+    </div>
+
+    <div class="about-me" id="about-me">
+        <div class="about-me-header">
+            <h2>Hi!</h2>
+        </div>
+        <div class="about-me-p">
+            <p>I am just a computer engineering student at King Mongkut's University of Technology Thonburi in Thailand, who is interested in cyber security and x86 computer architecture. I'm currently a CTF player, good at reverse engineering. I would like to continue studying pwnable and want to be the pioneer of cyber security in Thailand.</p>
+        </div>
+    </div>
+
+    <div class="methodology-para" id="methodology">
+        <div class="methodology">
+            <div class="methodology-header">
+                <h2>Why am I interested in Cyber Security?</h2>
+            </div>
+            <div class="methodology-p">
+                <p>I think the main driver for me is to see improvements. I’m a problem solver. I like to see these problems disappear. If poor security is the problem, then I want to be part of making that go away. It can be as simple as doing a retest on an app and seeing major changes for the better. Or it could be being involved in a company-wide scheme to bolster password security. There is a buzz from seeing things get better.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="edu" id="education">
+        <div class="edu-header">
+            <h2>Education</h2>
+        </div>
+        <div class="edu-p">
+            <div class="edu-item">
+                <div class="edu-p1">
+                    <h3>• King Mongkut's University of Technology Thonburi</h3>
+                    <p>Bachelor of Engineering Program in Computer Engineering</p>
+                    <p>2024 - PRESENT</p>
+                </div>
+                <img class="edu-logo" src="src/logo1.png" alt="KMUTT Logo">
+            </div>
+            <div class="edu-item">
+                <div class="edu-p2">
+                    <h3>• Kanchanapisek Wittayalai Nakhon Pathom School</h3>
+                    <p>Pre-Engineering Program in High School</p>
+                    <p>2018 - 2023</p>
+                </div>
+                <img class="edu-logo" src="src/logo2.png" alt="Kanchanapisek School Logo">
+            </div>
+            <div class="edu-item">
+                <div class="edu-p3">
+                    <h3>• Nakprasith School</h3>
+                    <p>Primary School</p>
+                    <p>2012 - 2017</p>
+                </div>
+                <img class="edu-logo" src="src/logo3.png" alt="Nakprasith School Logo">
+            </div>
+        </div>
+    </div>
+
+    <div class="skill" id="skills">
+        <h2>My Experiences</h2>
+        <div class="skill-container">
+            <div class="skill-category">
+                <h3>Programming language</h3>
+                <div class="skill-item">
+                    <span>Python</span><span>Experienced</span>
+                </div>
+                <div class="skill-item">
+                    <span>C</span><span>Experienced</span>
+                </div>
+                <div class="skill-item">
+                    <span>C#</span><span>Basic</span>
+                </div>
+                <div class="skill-item">
+                    <span>x86</span><span>Basic</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Technology and Tools</h3>
+                <div class="skill-item">
+                    <span>Ghidra</span><span>Experienced</span>
+                </div>
+                <div class="skill-item">
+                    <span>Wireshark</span><span>Experienced</span>
+                </div>
+                <div class="skill-item">
+                    <span>Metasploit</span><span>Basic</span>
+                </div>
+                <div class="skill-item">
+                    <span>BurpSuite</span><span>Basic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="contact-head">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fa fa-envelope"></i>
+                    <p>University Email</p>
+                    <span><a href="mailto:kiatisak.markm@kmutt.ac.th">kiatisak.markm@kmutt.ac.th</a></span>
+                </div>
+                <div class="contact-item">
+                    <i class="fa fa-messenger"></i>
+                    <p>Personal Email</p>
+                    <span><a href="mailto:kiatisakforstudy@gmail.com">kiatisakforstudy@gmail.com</a></span>
+                </div>
+                <div class="contact-item">
+                    <i class="fa fa-linkedin"></i>
+                    <p>Medium</p>
+                    <span><a href="https://medium.com/@kiatisakforstudy" target="_blank">kiatisakforstudy</a></span>
+                </div>
+            </div>
+            <div class="contact-form">
+                <input type="text" id="name" placeholder="Your Name">
+                <input type="email" id="email" placeholder="Your Email">
+                <textarea id="message" class="ms" placeholder="Your Message"></textarea>
+                <button onclick="sendEmail()">Send Message</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-contain">
+        <hr class="footer-line">
+        <span class="footer-copyright">© Kiatisak Markmeeshap 2024</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
